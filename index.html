@@ -402,6 +402,40 @@
       .brand{min-width:auto;}
       .section-title .small{justify-content:flex-start;}
     }
+    @media (max-width: 980px){
+  .nav{
+    flex-direction: column;
+    align-items: stretch;         /* full width */
+    gap: 10px;
+  }
+
+  .brand{
+    min-width: 0;
+  }
+
+  .links{
+    justify-content: flex-start;  /* stop centering on mobile */
+    gap: 8px;
+    overflow-x: auto;             /* no weird wrapping */
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 6px;
+  }
+
+  .links a{
+    white-space: nowrap;          /* keep each link on one line */
+    flex: 0 0 auto;
+  }
+
+  .cta{
+    justify-content: flex-start;  /* align button */
+  }
+
+  .btn{
+    width: 100%;                  /* optional: full-width button */
+    justify-content: center;
+  }
+}
+
   </style>
 </head>
 
